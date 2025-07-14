@@ -79,5 +79,9 @@ resource "aws_ecs_service" "this" {
     container_port   = 80
   }
 
-  depends_on = [aws_ecs_task_definition.this]
+    depends_on = [
+    aws_ecs_task_definition.this,
+    aws_ecs_cluster.this,
+    var.listener_arn
+  ]
 }

@@ -70,12 +70,9 @@ resource "aws_lb_listener" "http" {
   protocol          = "HTTP"
 
   default_action {
-    type = "fixed-response"
-    fixed_response {
-      content_type = "text/plain"
-      message_body = "Service not ready"
-      status_code  = "503"
-    }
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.this.arn
   }
 }
+
 

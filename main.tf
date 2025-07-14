@@ -28,6 +28,9 @@ module "ecs" {
   region             = var.dr_region
   target_group_arn   = module.alb.target_group_arn
   security_groups    = [module.alb.alb_sg_id]
+  depends_on = [module.alb]
+  listener_arn = module.alb.listener_arn
+
 
   providers = {
     aws = aws.dr

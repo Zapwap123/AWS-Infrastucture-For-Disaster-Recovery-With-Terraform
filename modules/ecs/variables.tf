@@ -41,3 +41,6 @@ variable "region" {
   type        = string
 }
 
+variable "listener_arn" {
+  type = string
+}
