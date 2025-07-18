@@ -26,6 +26,10 @@ This project provisions a complete Disaster Recovery (DR) infrastructure for a L
 └──────────────────────────────┘
 ```
 
+## 🧱 Architecture
+
+![Architecture Diagram](./Disaster-Recovery-Architecture-Diagram.drawio.png)
+
 ## 📦 Module Breakdown
 
 - `network/`: VPC, subnets, IGW, NAT, routes
