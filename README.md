@@ -8,6 +8,22 @@ This project provisions a complete Disaster Recovery (DR) infrastructure for a L
 - VPC with public/private subnets, NAT gateways
 - Lambda + EventBridge trigger for automatic failover
 
+## 📦 ALB Links Application
+
+`Primary: `
+
+```
+  http://ecs-lamp-alb-1868910702.eu-west-1.elb.amazonaws.com
+```
+
+And
+
+`Disaster Recovery: `
+
+```
+  http://ecs-lamp-dr-alb-1828828452.eu-central-1.elb.amazonaws.com
+```
+
 ## 🚀 Architecture Overview
 
 ```
