@@ -5,3 +5,4 @@
 /terraform.tfstate.backup
 /dr-plan.tfplan
 /tempfile.txt
+/.secretsmanager create-secret 
